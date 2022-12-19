@@ -1,0 +1,73 @@
+.card {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  // gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 24px 3px rgba(106, 106, 106, 0.1);
+  // margin-right: 0 1.5rem;
+
+  // border: 1px solid red;
+  width: max-content;
+
+  &__img-container {
+    // border: 1px solid red;
+
+    position: relative;
+    width: 33rem;
+    height: 35rem;
+  }
+  &__img {
+    width: 100%;
+    // object-fit: cover;
+    object-fit: contain;
+  }
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-bottom: 2.1rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 2.8rem;
+    color: #2c2724;
+  }
+
+  &__prices {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: rgba(44, 39, 36, 0.75);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  &__price {
+  }
+  &__cut-price {
+  }
+
+  &_stars {
+  }
+  &__star {
+  }
+  &__star-empty {
+  }
+}
+
+// to align cards at center
+.card:first-of-type {
+  margin-left: 4rem;
+}

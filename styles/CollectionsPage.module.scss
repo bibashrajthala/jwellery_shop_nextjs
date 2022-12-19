@@ -1,0 +1,76 @@
+.collections {
+  .collection-list {
+    margin: 7rem;
+    margin-bottom: 16rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+  }
+
+  .collection:nth-of-type(1),
+  .collection:nth-of-type(7) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../public/collectionBackground1-collections.png");
+  }
+  .collection:nth-of-type(2),
+  .collection:nth-of-type(8) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../public/collectionBackground2-collections.png");
+  }
+  .collection:nth-of-type(3),
+  .collection:nth-of-type(9) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../public/collectionBackground3-collections.png");
+  }
+  .collection:nth-of-type(4),
+  .collection:nth-of-type(10) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../public/collectionBackground4-collections.png");
+  }
+  .collection:nth-of-type(5) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../public/collectionBackground5-collections.png");
+  }
+  .collection:nth-of-type(6) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../public/collectionBackground6-collections.png");
+  }
+
+  .collection {
+    // flex: 1;
+    width: 72rem;
+    height: 37.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    &__title {
+      font-weight: 500;
+      font-size: 2.9rem;
+      line-height: 3.8rem;
+      color: #ffffff;
+    }
+    &__btn {
+      min-width: 11.6rem;
+      height: 3.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ffffff;
+      border-radius: 2px;
+      background-color: transparent;
+
+      font-family: "Quicksand";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: #ffffff;
+    }
+  }
+}

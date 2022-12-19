@@ -1,0 +1,13 @@
+.slider-btn {
+  border: none;
+  width: 6.4rem;
+  height: 6.4rem;
+  background: #808082 !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  & svg {
+  }
+}

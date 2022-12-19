@@ -1,0 +1,49 @@
+.filters {
+  margin: 5rem 17rem;
+  display: flex;
+  align-items: center;
+  gap: 30.8rem;
+
+  // width: 1453.8px;
+  // height: 44.67px;
+}
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+
+  // width: 825px;
+  // height: 44px;
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    color: #2c2724;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.6rem;
+  }
+  &__item {
+    width: 13.5rem;
+    height: 4.4rem;
+
+    //   display: inline-block;
+    padding-left: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    color: #2c2724;
+  }
+  &__item--sort {
+    width: 24.5rem;
+  }
+}

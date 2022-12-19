@@ -1,0 +1,31 @@
+.hero {
+  padding: 14.6rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &__heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.4rem;
+  }
+  &__heading {
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 5rem;
+    color: #ffffff;
+  }
+}
+
+.hero-products {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../public/heroBackground-products.png");
+}
+.hero-collections {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../public/heroBackground-collections.png");
+}

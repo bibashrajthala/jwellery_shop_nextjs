@@ -1,0 +1,38 @@
+.features {
+  margin: 4.2rem 7rem;
+  padding: 4.6rem 10.3rem;
+  //   height: 148px;
+  background: radial-gradient(
+    44.55% 1995.92% at 49.04% 50%,
+    #fafafa 0%,
+    rgba(196, 196, 196, 0.5) 100%
+  );
+
+  display: flex;
+  justify-content: space-between;
+
+  .feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6rem;
+
+    max-width: 23.2rem;
+    height: 5.6rem;
+
+    &__svg {
+      min-width: 5.6rem;
+    }
+
+    &__text {
+      //   width: 160px;
+      //   height: 56px;
+
+      font-weight: 500;
+      font-size: 2.4rem;
+      line-height: 2.8rem;
+
+      color: #fd405e;
+    }
+  }
+}
