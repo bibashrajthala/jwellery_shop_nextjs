@@ -87,10 +87,10 @@ const Header = () => {
           </nav>
 
           <div className={styles["header__bottom-icons"]}>
-            <HeaderIcon1 className={styles["header__buttom-icon"]} />
-            <HeaderIcon2 className={styles["header__buttom-icon"]} />
-            <HeaderIcon3 className={styles["header__buttom-icon"]} />
-            <HeaderIcon4 className={styles["header__buttom-icon"]} />
+            <HeaderIcon1 className={styles["header__bottom-icon"]} />
+            <HeaderIcon2 className={styles["header__bottom-icon"]} />
+            <HeaderIcon3 className={styles["header__bottom-icon"]} />
+            <HeaderIcon4 className={styles["header__bottom-icon"]} />
           </div>
         </div>
       </header>

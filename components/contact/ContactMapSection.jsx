@@ -11,9 +11,9 @@ const ContactMapSection = () => {
         // width="800"
         // height="600"
         style={{ border: "none", width: "100vw", height: "30rem" }}
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </section>
   );

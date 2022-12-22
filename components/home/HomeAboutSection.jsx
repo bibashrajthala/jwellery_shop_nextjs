@@ -20,7 +20,8 @@ const HomeAboutSection = () => {
           roots, harking on their desire for contemporary looks and styles in
           uncut diamond jewellery.
         </p>
-        <button className={styles["about__btn"]}>Start Shopping</button>
+        {/* <button className={styles["about__btn"]}>Start Shopping</button> */}
+        <button className="btn__inverted">Start Shopping</button>
       </div>
       <div className={styles["about__img-container"]}>
         <Image

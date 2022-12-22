@@ -60,18 +60,10 @@
           border: 1px solid #ccc;
         }
         &-btn {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
           padding: 1.6rem 4.8rem;
 
           width: 24rem;
           height: 5rem;
-
-          /* Gradient */
-
-          background: linear-gradient(90deg, #fd405e 0%, #fe6433 105%);
           border-radius: 1rem;
           border: none;
 
@@ -79,9 +71,6 @@
           font-style: normal;
           font-weight: 500;
           font-size: 2rem;
-          color: #ffffff;
-
-          cursor: pointer;
         }
       }
 
@@ -123,6 +112,11 @@
         &-text--small {
           color: #777;
           font-size: 1.6rem;
+          text-decoration: none;
+          cursor: pointer;
+          &:hover {
+            color: #fd405e;
+          }
         }
       }
     }

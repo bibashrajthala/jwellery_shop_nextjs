@@ -171,8 +171,10 @@ const ProductDetailProductSection = () => {
           </div>
         </div>
         <div className={styles["product__btns"]}>
-          <button className={styles["product__btn--add"]}>Add to cart</button>
-          <button className={styles["product__btn--buy"]}>Buy Now</button>
+          {/* <button className={styles["product__btn--add"]}>Add to cart</button> */}
+          <button className="btn__primary">Add to cart</button>
+          {/* <button className={styles["product__btn--buy"]}>Buy Now</button> */}
+          <button className="btn__inverted">Buy Now</button>
           <button className={styles["product__btn--favourite-icon-container"]}>
             <ProductFavouriteIcon
               className={styles["product__btn--favourite-icon"]}

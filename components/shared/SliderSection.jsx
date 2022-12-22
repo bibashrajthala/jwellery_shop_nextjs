@@ -5,12 +5,12 @@ import CardSlider from "./CardSlider";
 
 import styles from "../../styles/SliderSection.module.scss";
 
-function SliderSection({ headingLabel }) {
+function SliderSection({ headingLabel, recentProducts }) {
   return (
     <section className={styles["cards"]}>
       <Heading headingLabel={headingLabel} />
 
-      <CardSlider />
+      <CardSlider recentProducts={recentProducts} />
     </section>
   );
 }

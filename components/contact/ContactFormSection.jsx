@@ -4,7 +4,8 @@ import { FaQuestion } from "react-icons/fa";
 
 import styles from "../../styles/ContactPage.module.scss";
 
-const ContactFormSection = () => {
+const ContactFormSection = ({ contactDetails }) => {
+  const { address, email, photo } = contactDetails;
   return (
     <section className={styles["contact__section"]}>
       <div className={styles["contact__form-container"]}>
@@ -64,7 +65,10 @@ const ContactFormSection = () => {
             />
           </div>
           <div className={styles["contact__form-item"]}>
-            <button type="submit" className={styles["contact__form-btn"]}>
+            <button
+              type="submit"
+              className={`btn__primary ${styles["contact__form-btn"]}`}
+            >
               Send Message
             </button>
           </div>
@@ -86,9 +90,14 @@ const ContactFormSection = () => {
               <p className={styles["contact__info-text"]}>
                 You can reach us at the following address
               </p>
-              <p className={styles["contact__info-text--small"]}>
-                Kupondole, Lalitpur, Kathmandu
-              </p>
+              <a
+                href="https://goo.gl/maps/vTm5mfD6o1jR1tfG8"
+                className={styles["contact__info-text--small"]}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {address}
+              </a>
             </div>
           </div>
           <div className={styles["contact__info-item"]}>
@@ -101,9 +110,12 @@ const ContactFormSection = () => {
                 Email your issues and suggestion for the following email
                 addresses:
               </p>
-              <p className={styles["contact__info-text--small"]}>
-                intoprosnp@gmail.com
-              </p>
+              <a
+                className={styles["contact__info-text--small"]}
+                href={`mailto: ${email}`}
+              >
+                {email}
+              </a>
             </div>
           </div>
 
@@ -116,7 +128,13 @@ const ContactFormSection = () => {
                 Need to call Us?
               </h4>
 
-              <p className={styles["contact__info-text--small"]}>9861223344</p>
+              {/* <p className={styles["contact__info-text--small"]}>9861223344</p> */}
+              <a
+                className={styles["contact__info-text--small"]}
+                href={`tel: ${"9861223344"}`}
+              >
+                9861223344
+              </a>
             </div>
           </div>
           <div className={styles["contact__info-item"]}>

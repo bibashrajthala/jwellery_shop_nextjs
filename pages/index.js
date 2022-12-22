@@ -1,6 +1,7 @@
 import Head from "next/head";
-import SliderSection from "../components/shared/SliderSection";
+import axios from "axios";
 
+import SliderSection from "../components/shared/SliderSection";
 import FeaturesSection from "../components/shared/FeaturesSection";
 import BlogsSection from "../components/shared/BlogsSection";
 import HomeHeroSection from "../components/home/HomeHeroSection";
@@ -11,7 +12,7 @@ import HomeAboutSection from "../components/home/HomeAboutSection";
 // import styles from "../styles/Home.module.scss";
 import HomeFeaturedProductSection from "../components/home/HomeFeaturedProductSection";
 
-export default function Home() {
+export default function Home({ recentProducts, collections }) {
   return (
     <div>
       <Head>
@@ -24,19 +25,43 @@ export default function Home() {
 
       <FeaturesSection />
 
-      <SliderSection headingLabel="The Bestsellers" />
+      <SliderSection
+        headingLabel="The Bestsellers"
+        recentProducts={recentProducts}
+      />
 
       <HomeProductSection />
 
-      <SliderSection headingLabel="Trending Products" />
+      <SliderSection
+        headingLabel="Trending Products"
+        recentProducts={recentProducts}
+      />
 
       <HomeAboutSection />
 
-      <HomeFeaturedProductSection />
+      <HomeFeaturedProductSection
+        recentProducts={recentProducts}
+        isFeatured={true}
+      />
 
-      <HomeCollectionsSection />
+      <HomeCollectionsSection collections={collections} />
 
       <BlogsSection />
     </div>
   );
 }
+
+export const getServerSideProps = async () => {
+  const response = await axios.get("http://offerkcha.com/api/recent");
+  const recentProducts = await response.data.data;
+
+  const response2 = await axios.get("http://offerkcha.com/api/category");
+  const collections = await response2.data.data;
+
+  return {
+    props: {
+      recentProducts,
+      collections,
+    },
+  };
+};

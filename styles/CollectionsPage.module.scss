@@ -56,21 +56,7 @@
       color: #ffffff;
     }
     &__btn {
-      min-width: 11.6rem;
-      height: 3.6rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid #ffffff;
-      border-radius: 2px;
-      background-color: transparent;
-
-      font-family: "Quicksand";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 1.4rem;
-      line-height: 2rem;
-      color: #ffffff;
+      cursor: pointer;
     }
   }
 }

@@ -43,7 +43,8 @@ const HomeProductSection = () => {
         </div>
 
         <div className={styles["product__pricing"]}>
-          <button className={styles["product__btn"]}>Add to cart</button>
+          {/* <button className={styles["product__btn"]}>Add to cart</button> */}
+          <button className="btn__primary">Add to cart</button>
 
           <div className={styles["product__price-container"]}>
             <p className={styles["product__title"]}>Golden Ring</p>

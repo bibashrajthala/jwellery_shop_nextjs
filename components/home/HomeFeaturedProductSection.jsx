@@ -4,12 +4,12 @@ import ProductList from "../shared/ProductList";
 
 import styles from "../../styles/Home.module.scss";
 
-const HomeFeaturedProductSection = () => {
+const HomeFeaturedProductSection = ({ recentProducts, isFeatured }) => {
   return (
     <div className={styles["featured-products"]}>
       <Heading headingLabel="Featured Products" />
 
-      <ProductList />
+      <ProductList recentProducts={recentProducts} isFeatured={isFeatured} />
     </div>
   );
 };

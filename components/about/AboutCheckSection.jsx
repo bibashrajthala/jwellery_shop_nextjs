@@ -1,8 +1,11 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 import styles from "../../styles/AboutPage.module.scss";
 
 const AboutCheckSection = () => {
+  const router = useRouter();
+
   return (
     <section className={styles["check"]}>
       <div className={styles["check__texts"]}>
@@ -15,7 +18,12 @@ const AboutCheckSection = () => {
           Make your wedding perfect with Jewelries from Jshop.
         </p>
       </div>
-      <button className={styles["check__btn"]}>Check Now</button>
+      <button
+        onClick={() => router.push("/collections")}
+        className="btn__tertiary"
+      >
+        Check Now
+      </button>
     </section>
   );
 };

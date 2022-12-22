@@ -1,8 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 
-import RightArrow from "../../public/rightArrow.svg";
-import LeftArrow from "../../public/leftArrow.svg";
+// import RightArrow from "../../public/rightArrow.svg";
+// import LeftArrow from "../../public/leftArrow.svg";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import SliderCard from "./SliderCard";
 
 import styles from "../../styles/CardSlider.module.scss";
@@ -19,7 +20,7 @@ function NextArrow(props) {
       }}
       disabled={className?.includes("slick-disabled")}
     >
-      <RightArrow className={styles["slider-btn-svg"]} />
+      <BsArrowRight className={styles["slider-btn-svg"]} />
     </button>
   );
 }
@@ -38,12 +39,12 @@ function PrevArrow(props) {
       }}
       disabled={className?.includes("slick-disabled")}
     >
-      <LeftArrow className={styles["slider-btn-svg"]} />
+      <BsArrowLeft className={styles["slider-btn-svg"]} />
     </button>
   );
 }
 
-export default function CardSlider() {
+export default function CardSlider({ recentProducts }) {
   var settings = {
     // centerMode: true,
     dots: false,
@@ -85,11 +86,17 @@ export default function CardSlider() {
     // <div style={{ padding: "4rem" }}>
     <div style={{ width: "100%", padding: "0rem" }}>
       <Slider {...settings}>
-        {[1, 2, 3, 4, 5, 6, 7, 8].map((el, index) => (
+        {recentProducts.map((product) => (
+          <div key={product.id}>
+            <SliderCard product={product} />
+          </div>
+        ))}
+
+        {/* {[1, 2, 3, 4, 5, 6, 7, 8].map((el, index) => (
           <div key={index}>
             <SliderCard />
           </div>
-        ))}
+        ))} */}
       </Slider>
     </div>
   );

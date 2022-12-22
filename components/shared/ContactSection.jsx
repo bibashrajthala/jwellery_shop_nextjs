@@ -1,8 +1,11 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 import styles from "../../styles/ContactSection.module.scss";
 
 function ContactSection() {
+  const router = useRouter();
+
   return (
     <section className={styles["contact"]}>
       <div className={styles["contact__texts"]}>
@@ -16,7 +19,9 @@ function ContactSection() {
           amet, cons adipiscing elit. Lorem ipsum dolor sit am
         </p>
       </div>
-      <button className={styles["contact__btn"]}>Contact Us</button>
+      <button onClick={() => router.push("/contact")} className="btn__tertiary">
+        Contact Us
+      </button>
     </section>
   );
 }

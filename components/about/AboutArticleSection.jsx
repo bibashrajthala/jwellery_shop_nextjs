@@ -34,7 +34,8 @@ const AboutArticleSection = () => {
               diamond jewellery.
             </p>
           </div>
-          <button className={styles["article__btn"]}>Start Shopping</button>
+          {/* <button className={styles["article__btn"]}>Start Shopping</button> */}
+          <button className="btn__inverted">Start Shopping</button>
         </div>
       </div>
       <div className={`${styles["article"]} ${styles["article2"]} `}>
@@ -63,7 +64,8 @@ const AboutArticleSection = () => {
               diamond jewellery.
             </p>
           </div>
-          <button className={styles["article__btn"]}>View Collections</button>
+          {/* <button className={styles["article__btn"]}>View Collections</button> */}
+          <button className="btn__inverted">View Collections</button>
         </div>
       </div>
       <div className={`${styles["article"]} ${styles["article3"]} `}>
@@ -92,7 +94,8 @@ const AboutArticleSection = () => {
               diamond jewellery.
             </p>
           </div>
-          <button className={styles["article__btn"]}>Shop Now</button>
+          {/* <button className={styles["article__btn"]}>Shop Now</button> */}
+          <button className="btn__inverted">Shop Now</button>
         </div>
       </div>
     </article>

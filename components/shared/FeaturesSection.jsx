@@ -5,7 +5,7 @@ import FeatureIcon2 from "../../public/FeatureIcon2.svg";
 import FeatureIcon3 from "../../public/FeatureIcon3.svg";
 import FeatureIcon4 from "../../public/FeatureIcon4.svg";
 
-import styles from "../../styles/Featues.module.scss";
+import styles from "../../styles/Features.module.scss";
 
 const FeaturesSection = () => {
   return (

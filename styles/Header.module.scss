@@ -1,4 +1,7 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   &__top {
     // border: 1px solid green;
     background: linear-gradient(90deg, #fd405e 0%, #fe6433 105%);
@@ -43,6 +46,7 @@
     background: #ffffff;
 
     &-logo-container {
+      cursor: pointer;
     }
     &-logo {
     }
@@ -63,6 +67,7 @@
 
         color: #2c2724;
         text-decoration: none;
+        cursor: pointer;
 
         // color: red;
       }
@@ -80,6 +85,7 @@
       //   height: 24px;
     }
     &-icon {
+      cursor: pointer;
     }
   }
 }
