@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Tabs } from "antd";
 
 import styles from "../../styles/ProductDetailPage.module.scss";
 
@@ -20,6 +21,19 @@ const ProductDetailsTabSection = () => {
         width={705}
         height={927}
       />
+
+      {/* <Tabs
+        defaultActiveKey="1"
+        centered
+        items={new Array(3).fill(null).map((_, i) => {
+          const id = String(i + 1);
+          return {
+            label: `Tab ${id}`,
+            key: id,
+            children: `Content of Tab Pane ${id}`,
+          };
+        })}
+      /> */}
       <div className={styles["tab"]}>
         <div className={styles["tab__titles"]}>
           <button
@@ -27,7 +41,6 @@ const ProductDetailsTabSection = () => {
           >
             Product Details
           </button>
-          <button className={styles["tab__title"]}>Description</button>
           <button className={styles["tab__title"]}>Reviews</button>
         </div>
         <div className={styles["tab__contents"]}>

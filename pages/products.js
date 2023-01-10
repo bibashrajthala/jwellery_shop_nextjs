@@ -7,7 +7,7 @@ import ProductList from "../components/shared/ProductList";
 
 import styles from "../styles/ProductPage.module.scss";
 
-const products = ({ products }) => {
+const Products = ({ products }) => {
   return (
     <div className={styles["products"]}>
       <HeroCommon label="All Products" extraClassName={"hero-products"} />
@@ -19,7 +19,7 @@ const products = ({ products }) => {
   );
 };
 
-export default products;
+export default Products;
 
 export const getServerSideProps = async () => {
   const response = await axios.get("http://offerkcha.com/api/recent");

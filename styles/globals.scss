@@ -22,6 +22,13 @@ body {
   background-color: #ffffff;
 }
 
+// for modals
+.ant-modal .ant-modal-content {
+  border-radius: 2px;
+  font-family: "Quicksand", sans-serif;
+  padding: 3rem 5rem;
+}
+
 // for active nav item styling
 .active-nav-element {
   color: #fd405e !important;
@@ -51,18 +58,21 @@ body {
   display: none !important;
 }
 
+// different variants of buttons used in this web
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  // border-radius: 10rem;
+  border-radius: 2px;
+
   &__primary {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 1.6rem 4.8rem;
-    min-width: 21.7rem;
+    min-width: 20rem;
     height: 6rem;
 
     background: linear-gradient(90deg, #fd405e 0%, #fe6433 105%);
-    border-radius: 10rem;
     border: none;
 
     font-family: "Quicksand";
@@ -71,8 +81,8 @@ body {
     font-size: 2.2rem;
     line-height: 2.8rem;
     color: #ffffff;
-
     cursor: pointer;
+
     transition: all 0.5s ease-out;
 
     &:hover {
@@ -82,15 +92,10 @@ body {
 
   &__inverted {
     border: 1px solid #fd405e;
-    border-radius: 10rem;
     // border-image-source: linear-gradient(90deg, #fd405e 0%, #fe6433 105%);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 1.6rem 4.8rem;
-
-    min-width: 20.6rem;
+    min-width: 20rem;
     height: 6rem;
 
     font-family: "Quicksand";
@@ -104,8 +109,8 @@ body {
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     cursor: pointer;
+
     transition: all 0.5s ease-out;
 
     &:hover {
@@ -117,7 +122,6 @@ body {
 
   &__secondary {
     border: 1px solid #ffffff;
-    border-radius: 2px;
 
     font-family: "Quicksand";
     font-style: normal;
@@ -129,9 +133,6 @@ body {
 
     min-width: 11.6rem;
     height: 3.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     cursor: pointer;
     transition: all 0.2s ease-out;
@@ -146,9 +147,8 @@ body {
   &__tertiary {
     padding: 1.6rem 4.8rem;
     min-width: 21.3rem;
-    height: 60px;
+    height: 6rem;
     background: linear-gradient(90deg, #ffffff 0%, #cac9c9 105%);
-    border-radius: 10rem;
     border: none;
 
     font-family: "Quicksand";
@@ -157,12 +157,8 @@ body {
     font-size: 2.2rem;
     line-height: 2.8rem;
     color: #fd405e;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
     cursor: pointer;
+
     transition: all 0.5s ease-out;
 
     &:hover {

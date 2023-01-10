@@ -8,6 +8,7 @@ import HeroCommon from "../../components/shared/HeroCommon";
 import ProductList from "../../components/shared/ProductList";
 
 import styles from "../../styles/ProductPage.module.scss";
+
 const CollectionDetails = ({ collections }) => {
   const router = useRouter();
   const { collectionTitle } = router.query;

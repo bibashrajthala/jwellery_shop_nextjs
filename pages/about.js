@@ -7,7 +7,7 @@ import AboutCheckSection from "../components/about/AboutCheckSection";
 
 import styles from "../styles/AboutPage.module.scss";
 
-const about = () => {
+const About = () => {
   return (
     <div className={styles["about"]}>
       <AboutHerosection />
@@ -21,4 +21,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

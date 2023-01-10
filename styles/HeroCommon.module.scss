@@ -23,9 +23,14 @@
 
 .hero-products {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../public/heroBackground-products.png");
+    url("../public/heroBackground-products.png") no-repeat center/cover;
 }
 .hero-collections {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../public/heroBackground-collections.png");
+    url("../public/heroBackground-collections.png") no-repeat center/cover;
+}
+
+.hero-cart {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../public/heroBackground-cart.png") no-repeat center/cover;
 }

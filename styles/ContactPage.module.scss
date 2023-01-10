@@ -60,17 +60,7 @@
           border: 1px solid #ccc;
         }
         &-btn {
-          padding: 1.6rem 4.8rem;
-
-          width: 24rem;
-          height: 5rem;
-          border-radius: 1rem;
-          border: none;
-
-          font-family: "Quicksand";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 2rem;
+          max-width: 25rem;
         }
       }
 
@@ -110,6 +100,7 @@
           font-size: 1.8rem;
         }
         &-text--small {
+          // border: 1px solid red;
           color: #777;
           font-size: 1.6rem;
           text-decoration: none;

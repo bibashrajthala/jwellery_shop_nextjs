@@ -6,7 +6,7 @@ import ContactMapSection from "../components/contact/ContactMapSection";
 
 import styles from "../styles/ContactPage.module.scss";
 
-const contact = ({ contactDetails }) => {
+const Contact = ({ contactDetails }) => {
   // console.log(contactDetails);
   return (
     <div className={styles["contacts"]}>
@@ -17,7 +17,7 @@ const contact = ({ contactDetails }) => {
   );
 };
 
-export default contact;
+export default Contact;
 
 export const getServerSideProps = async () => {
   const response = await axios.get("http://offerkcha.com/api/contact");

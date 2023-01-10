@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { NavLink } from "./NavLink";
@@ -12,7 +12,19 @@ import HeaderIcon2 from "../../public/headerIcon2.svg";
 import HeaderIcon3 from "../../public/headerIcon3.svg";
 import HeaderIcon4 from "../../public/headerIcon4.svg";
 
+import CustomModal from "./CustomModal";
+
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
   return (
     <>
       <header className={styles["header"]}>
@@ -88,11 +100,20 @@ const Header = () => {
 
           <div className={styles["header__bottom-icons"]}>
             <HeaderIcon1 className={styles["header__bottom-icon"]} />
-            <HeaderIcon2 className={styles["header__bottom-icon"]} />
+            <HeaderIcon2
+              className={styles["header__bottom-icon"]}
+              onClick={showModal}
+            />
             <HeaderIcon3 className={styles["header__bottom-icon"]} />
             <HeaderIcon4 className={styles["header__bottom-icon"]} />
           </div>
         </div>
+
+        <CustomModal
+          handleOk={handleOk}
+          handleCancel={handleCancel}
+          isModalOpen={isModalOpen}
+        />
       </header>
     </>
   );

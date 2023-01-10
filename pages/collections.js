@@ -7,7 +7,7 @@ import HeroCommon from "../components/shared/HeroCommon";
 
 import styles from "../styles/CollectionsPage.module.scss";
 
-const collections = ({ collections }) => {
+const Collections = ({ collections }) => {
   return (
     <div className={styles["collections"]}>
       <HeroCommon label="Collections" extraClassName="hero-collections" />
@@ -19,7 +19,7 @@ const collections = ({ collections }) => {
   );
 };
 
-export default collections;
+export default Collections;
 
 export const getServerSideProps = async () => {
   const response = await axios.get("http://offerkcha.com/api/category");
