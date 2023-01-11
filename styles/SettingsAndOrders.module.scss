@@ -1,0 +1,64 @@
+.settings-container {
+  //   border: 1px solid red;
+
+  background: #ffffff;
+  border-radius: 3px;
+  flex-basis: 20%;
+  align-self: flex-start;
+  padding: 5.2rem 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6.2rem;
+
+  .settings {
+    // border: 1px solid green;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__header {
+      //   border: 1px solid red;
+
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      color: #2c2724;
+    }
+    &__header--active {
+      color: #fd405e;
+    }
+
+    &__icon {
+      font-size: 2.2rem;
+      flex-basis: 20%;
+    }
+    &__heading {
+      flex: 1;
+      font-weight: 500;
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+    }
+
+    &__items {
+      //   border: 1px solid red;
+      margin-left: calc(20% + 1.6rem); // width of icon + gap
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.6rem;
+    }
+
+    &__item {
+      list-style: none;
+      font-weight: 500;
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      color: rgba(44, 39, 36, 0.75);
+    }
+  }
+}

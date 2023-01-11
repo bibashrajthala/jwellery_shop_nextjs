@@ -9,8 +9,14 @@ import Line from "../../public/line.svg";
 import OrderModalIcon from "../../public/orderModalIcon.svg";
 
 import styles from "../../styles/CustomModal.module.scss";
+import SingleReview from "../productDetail/SingleReview";
 
-const CustomModal = ({ isModalOpen, handleCancel, handleOk }) => {
+const CustomModal = ({
+  isModalOpen,
+  handleCancel,
+  handleOk,
+  element = "review",
+}) => {
   const Login = () => {
     return (
       <div className={styles["login"]}>
@@ -190,16 +196,35 @@ const CustomModal = ({ isModalOpen, handleCancel, handleOk }) => {
       </div>
     );
   };
+
+  const FullReviews = () => {
+    return (
+      <div className={styles["reviews"]}>
+        <div className={styles["reviews__header"]}>
+          <h4 className={styles["reviews__heading"]}>Customer Reviews</h4>
+        </div>
+        <div className={styles["reviews__container"]}>
+          {Array(10)
+            .fill(1)
+            .map((el, i) => (
+              <SingleReview key={i} />
+            ))}
+        </div>
+      </div>
+    );
+  };
   return (
     <Modal
       open={isModalOpen}
       onOk={handleOk}
       onCancel={handleCancel}
       footer={null}
+      width={element === "review" ? 900 : 520}
     >
-      <Login />
+      {/* <Login /> */}
       {/* <Register /> */}
       {/* <OrderCompleted /> */}
+      <FullReviews />
     </Modal>
   );
 };
